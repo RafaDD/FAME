@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ideaeval"
+version = "0.1"
+description = "ideaeval"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "google-genai>=1.0.0",
+  "httpx>=0.27.0",
+  "openai>=1.40.0",
+  "pydantic>=2.8.0",
+  "python-dotenv>=1.0.1",
+  "huggingface_hub>=0.24.0",
+  "numpy",
+  "matplotlib",
+  "scikit-learn",
+  "torch",
+  "tqdm",
+  "requests",
+  "altmetric-explorer-api-client",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0",
+]
+
+[[tool.uv.index]]
+url = "https://pypi.org/simple"
+default = true
+
+[tool.uv.sources]
+altmetric-explorer-api-client = { url = "https://github.com/altmetric/altmetric-explorer-api-client/archive/refs/heads/main.tar.gz" }
+
+[project.scripts]
+idea-agent = "main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
