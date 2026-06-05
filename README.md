@@ -2,7 +2,7 @@
   <h2><b>FAME: Forecasting Academic Impact via Continuous-Time Manifold Evolution</b></h2>
   <h4><b>Jianrong Ding, Jianyuan Zhong, Zhengyan Shi, Qiang Xu†</b></h4>
 
-[![arXiv](https://img.shields.io/badge/arXiv-2605.07208-b31b1b.svg)](https://arxiv.org/abs/2605.07208) ![](https://img.shields.io/github/stars/RafaDD/FAME?style=social) 
+[![arXiv](https://img.shields.io/badge/arXiv-2605.07208-b31b1b.svg)](https://arxiv.org/abs/2605.07208)
 
 </div>
 <br>
